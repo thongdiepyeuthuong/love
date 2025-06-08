@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <title>thi tốt</title>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; overflow: hidden; background: black; }
+    canvas { display: block; }
+    #loadingText {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 24px;
+      font-family: 'Roboto', sans-serif;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+
+<div id="loadingText">Đang tải yêu thương...</div>
+
+<script src="https://cdn.jsdelivr.net/gh/dulieublog2/js@main/chukhonggian.js"></script>
+
+<script>
+const jansharenoidung = ["chúc bạn thi thật tốt và đạt kết quả như mong đợi!","","cố gắng lên nhé! kỳ thi này sẽ suôn sẻ thôi!","","bình tĩnh, tự tin, chiến thắng!","","chúc bạn làm bài thi thật tốt và đạt điểm cao!","","hãy tin vào bản thân – bạn làm được mà!","","chúc kỳ thi của bạn diễn ra thuận lợi và suôn sẻ!","","thi tốt nhé! đừng lo, mọi thứ sẽ ổn thôi!","","good luck on your exam! you've got this!","","wishing you su***ess in your exams and a bright future ahead.","","stay calm, stay confident – best of luck!","","do your best and su***ess will follow. good luck!","","you’ve studied hard – now go show them what you’ve got!","","may your exams be easier than you expect!","","best wishes for your test. i believe in you!"];
+const imageUrls = [ 'https://raw.githubusercontent.com/guiyeuthuong/love/main/uploads/1749398570360_z6685452810581_b337a0b962af3f367d5efbf92d038e9c.jpg' ];
+</script>
+
+<audio id="phatnhac" autoplay muted>
+  <source src="https://nguoiyeucuatoi.github.io/love/onlylove.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  document.addEventListener('click', function () {
+    const audio = document.getElementById('phatnhac');
+    audio.muted = false;
+    audio.play();
+  }, { once: true }); 
+</script>
+
+<script src="https://cdn.jsdelivr.net/gh/nguoiyeucuatoi/love@main/chuchayjanshare2.js"></script>
+</body>
+</html>
