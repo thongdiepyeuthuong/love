@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <title>Love.tsonit.com/love300</title>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; overflow: hidden; background: black; }
+    canvas { display: block; }
+    #loadingText {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 24px;
+      font-family: 'Roboto', sans-serif;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+
+<div id="loadingText">Đang tải yêu thương...</div>
+
+<script src="https://cdn.jsdelivr.net/gh/dulieublog2/js@main/chukhonggian.js"></script>
+
+<script>
+const jansharenoidung = ["14.03.2024","Đặng Hoàng Anh ","Em yêu Anh ","Tô Thị Như Ý ","Anh là cả cuộc đời em ","07.07.2008","09.10.2004","Em thương anh nhất <",">",";",":"," Em muốn cuộc sống chúng ta luôn màu hồng ","Anh là cả thế giới của em ","+ ,","Em muốn anh chủ động trước ","Em ước anh xem em là cả cuộc đời anh","; ","Em muốn anh bảo vệ em","14.03.2024","Muốn anh lo lắng cho em","Em sẽ yêu thương anh","Em bảo vệ anh đến hết cuộc đời em ","<","+","Em biết em là ránh nặng của anh","Em biết anh lúc nào cũng mệt em","Em có lúc khó chịu với anh","Em thương anh nhiều lắm ","Anh là người làm em thoải mái khi ở bên ","Em cảm ơn anh","Anh đã xuất hiện trong cuộc đời em ","Anh là niềm vui của em","Anh cũng là nỗi buồn của em","+  ,"];
+const imageUrls = [ 'https://raw.githubusercontent.com/guiyeuthuong/love/main/uploads/1749399088862_IMG_6467.jpeg' ];
+</script>
+
+<audio id="phatnhac" autoplay muted>
+  <source src="https://nguoiyeucuatoi.github.io/love/onlylove.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  document.addEventListener('click', function () {
+    const audio = document.getElementById('phatnhac');
+    audio.muted = false;
+    audio.play();
+  }, { once: true }); 
+</script>
+
+<script src="https://cdn.jsdelivr.net/gh/nguoiyeucuatoi/love@main/chuchayjanshare2.js"></script>
+</body>
+</html>
