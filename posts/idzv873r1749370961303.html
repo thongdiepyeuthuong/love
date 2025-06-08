@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <title>Gửi em</title>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; overflow: hidden; background: black; }
+    canvas { display: block; }
+    #loadingText {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 24px;
+      font-family: 'Roboto', sans-serif;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+
+<div id="loadingText">Đang tải yêu thương...</div>
+
+<script src="https://cdn.jsdelivr.net/gh/dulieublog2/js@main/chukhonggian.js"></script>
+
+<script>
+const jansharenoidung = [" Chúc mừng sinh nhật người tớ thích nhất!","  Mong cậu luôn hạnh phúc và rạng rỡ","  Tuổi mới thành công và đầy ắp yêu thương ","   Chúc cậu luôn mỉm cười mỗi ngày","   Bánh sinh nhật hôm nay sẽ ngọt như nụ cười cậu","    Tớ mong một ngày được đón sinh nhật cùng cậu ","    Cậu luôn là điều đặc biệt nhất với tớ","    Mỗi giây phút bên cậu đều quý giá","    Chúc cậu luôn khoẻ mạnh và yêu đời","    Hôm nay là ngày đặc biệt nhất trong năm","    Mong cậu gặp nhiều điều may mắn tuổi mới","    Một năm mới rực rỡ như chính cậu vậy","    Cảm ơn vì cậu đã xuất hiện trong cuộc đời tớ ","    Sinh nhật vui vẻ! Luôn vui tươi và lạc quan","    Tớ chúc cậu tất cả những điều tuyệt vời nhất "];
+const imageUrls = [ '' ];
+</script>
+
+<audio id="phatnhac" autoplay muted>
+  <source src="https://nguoiyeucuatoi.github.io/love/onlylove.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  document.addEventListener('click', function () {
+    const audio = document.getElementById('phatnhac');
+    audio.muted = false;
+    audio.play();
+  }, { once: true }); 
+</script>
+
+<script src="https://cdn.jsdelivr.net/gh/nguoiyeucuatoi/love@main/chuchayjanshare2.js"></script>
+</body>
+</html>
