@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <title>Trần Thị Ngọc </title>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; overflow: hidden; background: black; }
+    canvas { display: block; }
+    #loadingText {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 24px;
+      font-family: 'Roboto', sans-serif;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+
+<div id="loadingText">Đang tải yêu thương...</div>
+
+<script src="https://cdn.jsdelivr.net/gh/dulieublog2/js@main/chukhonggian.js"></script>
+
+<script>
+const jansharenoidung = ["Happybirthday cậu nhé","Chúc cậu tuổi mới luôn vui vẻ ","Miệng luôn mỉm cười","Lòng luôn an nhiên","Đời luôn hạnh phúc.","Mong cậu sớm buông bỏ được những ","Chấp niệm trong lòng","Quên đi chuyện buồn ở quá khứ","Tự tin đối mặt với hiện tại.","Mong cậu sớm thoát ra được ","Những Nỗi  buồn nơi quá khứ","Mong cậu  sớm được chữa lành","Mong cho những ngày tháng sau này ","Cậu sẽ găp nhiều thứ may mắn hơn.","Mong cậu chân cứng đá mềm ","Đường xa không mỏi, sớm thành công.","","Chúc cho cậu toại nguyện một đời "];
+const imageUrls = [ 'https://raw.githubusercontent.com/guiyeuthuong/love/main/uploads/1749450198878_IMG_0097.jpeg' ];
+</script>
+
+<audio id="phatnhac" autoplay muted>
+  <source src="https://nguoiyeucuatoi.github.io/love/onlylove.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  document.addEventListener('click', function () {
+    const audio = document.getElementById('phatnhac');
+    audio.muted = false;
+    audio.play();
+  }, { once: true }); 
+</script>
+
+<script src="https://cdn.jsdelivr.net/gh/nguoiyeucuatoi/love@main/chuchayjanshare2.js"></script>
+</body>
+</html>
