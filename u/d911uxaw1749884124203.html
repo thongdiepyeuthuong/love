@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <title>em yêu anh</title>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/webp" href="https://raw.githubusercontent.com/guiyeuthuong/love/main/uploads/1749688410048_favicon.webp">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; overflow: hidden; background: black; }
+    canvas { display: block; }
+    #loadingText {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 24px;
+      font-family: 'Roboto', sans-serif;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+
+<div id="loadingText">Đang tải yêu thương...</div>
+
+<script src="https://cdn.jsdelivr.net/gh/dulieublog2/js@main/chukhonggian.js"></script>
+
+<script>
+const jansharenoidung = ["<!DOCTYPE html>","<html lang=\"vi\">","<head>","  <meta charset=\"UTF-8\">","  <title>Em yêu anh Bùi Văn Nghĩa</title>","  <style>","    * { margin:0; padding:0; overflow:hidden; }","    html, body { width:100%; height:100%; background:black; font-family: Arial, sans-serif; }","    #stars {","      position:absolute; width:100%; height:100%;","      background: transparent;","    }","    .star {","      position:absolute; background: white; border-radius:50%;","      opacity:0.8;","    }","    .text-layer {","      position:absolute; width:100%; top:0;","      white-space: nowrap; overflow:hidden;","    }","    .text-line {","      font-size:24px; color:#ffcccc;","      text-shadow: 1px 1px 2px #fff;","      position:absolute; left:0;","    }","  </style>","</head>","<body>","","<canvas id=\"stars\"></canvas>","","<script>","  // ⭐ Tạo hiệu ứng sao","  const canvas = document.getElementById('stars');","  const ctx = canvas.getContext('2d');","  let w, h;","  function resize() {","    w = canvas.width = window.innerWidth;","    h = canvas.height = window.innerHeight;","  }","  window.addEventListener('resize', resize);","  resize();","","  const numStars = 200;","  const stars = Array.from({length:numStars}, () => ({","    x: Math.random()*w,","    y: Math.random()*h,","    r: Math.random()*1.2 + 0.8,","    alpha: Math.random()*0.5 + 0.5,","    dx: (Math.random()-0.5)*0.05,","    dy: (Math.random()-0.5)*0.05","  }));","","  function drawStars() {","    ctx.clearRect(0, 0, w, h);","    stars.forEach(s => {","      s.x += s.dx; s.y += s.dy;","      if (s.x<0||s.x>w) s.x = Math.random()*w;","      if (s.y<0||s.y>h) s.y = Math.random()*h;","      ctx.globalAlpha = s.alpha;","      ctx.beginPath();","      ctx.arc(s.x, s.y, s.r, 0, Math.PI*2);","      ctx.fillStyle = 'white';","      ctx.fill();","    });","  }","","  // 🎯 Text animations","  const layers = [];","  const text = 'em yêu anh Bùi Văn Nghĩa';","  const totalLines = 1000;","  const layerCount = 10;","","  for (let L=0; L<layerCount; L++) {","    const div = document.createElement('div');","    div.className = 'text-layer';","    div.style.transform = `translateZ(${L*5}px)`;","    document.body.appendChild(div);","    const speed = 0.5 + L*0.1;","    for (let i=0; i<totalLines/layerCount; i++) {","      const span = document.createElement('div');","      span.className = 'text-line';","      span.innerText = text;","      span.style.top = `${-Math.random()*h - i*40}px`;","      span.style.fontSize = `${20 + L*2}px`;","      span._y = parseFloat(span.style.top);","      span._speed = speed;","      div.appendChild(span);","    }","    layers.push(div);","  }","","  function animateText() {","    layers.forEach(div => {","      Array.from(div.children).forEach(span => {","        span._y += span._speed;","        if (span._y > h) span._y = -40;","        span.style.top = span._y + 'px';","      });","    });","  }","","  // 🚀 Animation loop","  function update() {","    drawStars();","    animateText();","    requestAnimationFrame(update);","  }","  update();","","</script>","","</body>","</html>"];
+const imageUrls = [ '' ];
+</script>
+
+<audio id="phatnhac" autoplay muted>
+  <source src="https://nguoiyeucuatoi.github.io/love/onlylove.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  document.addEventListener('click', function () {
+    const audio = document.getElementById('phatnhac');
+    audio.muted = false;
+    audio.play();
+  }, { once: true }); 
+</script>
+
+<script src="https://cdn.jsdelivr.net/gh/nguoiyeucuatoi/love@main/chuchayjanshare2.js"></script>
+</body>
+</html>
